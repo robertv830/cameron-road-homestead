@@ -85,10 +85,11 @@
                 Enjoy quiet acreage, wide-open skies, and incredible sunrise and sunset views at <strong class="text-white font-semibold">14113 Cameron Rd, Excelsior Springs, MO</strong>. Marketed directly by the owners with full broker support.
             </p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-                <a href="sms:+18166298039?body=Hi!%20I'm%20interested%20in%2014113%20Cameron%20Rd%20and%20have%20a%20question..." class="w-full sm:w-auto bg-white text-brand-800 hover:bg-slate-100 px-8 py-4 rounded-xl font-semibold shadow-lg transition transform active:scale-95 flex items-center justify-center space-x-3">
+                <!-- Smart Contact Button -->
+                <button id="mainContactBtn" class="w-full sm:w-auto bg-white text-brand-800 hover:bg-slate-100 px-8 py-4 rounded-xl font-semibold shadow-lg transition transform active:scale-95 flex items-center justify-center space-x-3">
                     <i class="fa-solid fa-comment-sms text-brand-700 text-lg"></i>
-                    <span>Text Owners Directly</span>
-                </a>
+                    <span id="mainContactBtnText">Text Owners Directly</span>
+                </button>
                 <a href="#schedule" class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-xl font-semibold shadow-lg transition transform active:scale-95 flex items-center justify-center space-x-3 border border-emerald-500/50">
                     <i class="fa-solid fa-calendar-check text-lg"></i>
                     <span>Schedule Showing via Broker</span>
@@ -116,7 +117,7 @@
         </div>
     </section>
 
-    <!-- Property Details / At a Glance Grid -->
+    <!-- Property Details Section -->
     <section id="details" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
             <span class="text-brand-700 font-semibold text-sm uppercase tracking-widest">Property Overview</span>
@@ -125,7 +126,6 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Card 1 -->
             <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition space-y-4">
                 <div class="w-14 h-14 bg-emerald-50 text-brand-700 rounded-2xl flex items-center justify-center text-2xl font-bold">
                     <i class="fa-solid fa-tree"></i>
@@ -134,13 +134,7 @@
                 <p class="text-slate-600 leading-relaxed">
                     Generous lot featuring mature trees, wide-open green spaces, and ample room for gardens, pets, outdoor recreation, or future custom outbuildings.
                 </p>
-                <ul class="space-y-2 text-sm text-slate-700 font-medium pt-2">
-                    <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-emerald-600"></i><span>Private & peaceful setting</span></li>
-                    <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-emerald-600"></i><span>Abundant wildlife & nature views</span></li>
-                </ul>
             </div>
-
-            <!-- Card 2 -->
             <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition space-y-4">
                 <div class="w-14 h-14 bg-emerald-50 text-brand-700 rounded-2xl flex items-center justify-center text-2xl font-bold">
                     <i class="fa-solid fa-sun"></i>
@@ -149,13 +143,7 @@
                 <p class="text-slate-600 leading-relaxed">
                     Enjoy unobstructed horizons providing magnificent, colorful sunrises in the morning and peaceful, vivid sunsets across the evening sky.
                 </p>
-                <ul class="space-y-2 text-sm text-slate-700 font-medium pt-2">
-                    <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-emerald-600"></i><span>Breathtaking sunrise/sunset vistas</span></li>
-                    <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-emerald-600"></i><span>Quiet, low-traffic country setting</span></li>
-                </ul>
             </div>
-
-            <!-- Card 3 -->
             <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition space-y-4">
                 <div class="w-14 h-14 bg-emerald-50 text-brand-700 rounded-2xl flex items-center justify-center text-2xl font-bold">
                     <i class="fa-solid fa-sliders"></i>
@@ -164,10 +152,6 @@
                 <p class="text-slate-600 leading-relaxed">
                     Reliable country utility setup engineered for peace of mind. Efficient heating/cooling and robust water systems designed for rural living.
                 </p>
-                <ul class="space-y-2 text-sm text-slate-700 font-medium pt-2">
-                    <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-emerald-600"></i><span>Efficient HVAC system</span></li>
-                    <li class="flex items-center space-x-2"><i class="fa-solid fa-check text-emerald-600"></i><span>High-speed internet availability</span></li>
-                </ul>
             </div>
         </div>
     </section>
@@ -182,42 +166,36 @@
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Gallery Item 1 -->
                 <div class="group relative overflow-hidden rounded-2xl shadow-md bg-white border border-slate-200">
                     <img src="assets/2%20Long%20Drive%20up%20to%20house%20and%20spacious%20front%20yard.jpg" alt="Front Exterior" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-transparent opacity-80 flex items-end p-6">
                         <span class="text-white font-semibold text-lg">Main Exterior & Front Yard</span>
                     </div>
                 </div>
-                <!-- Gallery Item 2 -->
                 <div class="group relative overflow-hidden rounded-2xl shadow-md bg-white border border-slate-200">
                     <img src="assets/3%20Bird's%20eye%20view%20of%20land%20with%20boundaries.jpg" alt="Aerial View" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-transparent opacity-80 flex items-end p-6">
                         <span class="text-white font-semibold text-lg">Aerial View of Land</span>
                     </div>
                 </div>
-                <!-- Gallery Item 3 -->
                 <div class="group relative overflow-hidden rounded-2xl shadow-md bg-white border border-slate-200">
                     <img src="assets/7%20Living%20Room%20with%20Large%20Windows.jpg" alt="Living Room" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-transparent opacity-80 flex items-end p-6">
                         <span class="text-white font-semibold text-lg">Bright Living Room Spaces</span>
                     </div>
                 </div>
-                <!-- Gallery Item 4 -->
                 <div class="group relative overflow-hidden rounded-2xl shadow-md bg-white border border-slate-200">
                     <img src="assets/Kitchen1.jpg" alt="Kitchen" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-transparent opacity-80 flex items-end p-6">
                         <span class="text-white font-semibold text-lg">Functional Kitchen & Dining</span>
                     </div>
                 </div>
-                <!-- Gallery Item 5 (Replaced Sub-Basement with an Acreage View) -->
                 <div class="group relative overflow-hidden rounded-2xl shadow-md bg-white border border-slate-200">
                     <img src="assets/44%20Back%20Field.jpg" alt="Back Field View" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-transparent opacity-80 flex items-end p-6">
-                        <span class="text-white font-semibold text-lg">Expansive Open Green Spaces</span>
+                        <span class="text-white font-semibold text-lg">Expansive Back Field & Acreage</span>
                     </div>
                 </div>
-                <!-- Gallery Item 6 -->
                 <div class="group relative overflow-hidden rounded-2xl shadow-md bg-white border border-slate-200">
                     <img src="assets/41%20Chicken%20Coop%20with%20automatic%20door%20opener.jpg" alt="Outbuildings" class="w-full h-64 object-cover group-hover:scale-105 transition duration-500">
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-transparent opacity-80 flex items-end p-6">
@@ -237,56 +215,22 @@
                 <p class="text-slate-200 leading-relaxed">
                     Tours are scheduled securely through our professional flat-fee listing broker to ensure smooth calendar coordination and key access.
                 </p>
-                <div class="space-y-4 pt-2">
-                    <div class="flex items-center space-x-4">
-                        <div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-emerald-300 font-bold">
-                            <i class="fa-solid fa-map-pin"></i>
-                        </div>
-                        <div>
-                            <span class="block font-semibold">Address</span>
-                            <span class="text-sm text-slate-300">14113 Cameron Rd, Excelsior Springs, MO 64024</span>
-                        </div>
-                    </div>
-                    <div class="flex items-center space-x-4">
-                        <div class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-emerald-300 font-bold">
-                            <i class="fa-solid fa-shield-halved"></i>
-                        </div>
-                        <div>
-                            <span class="block font-semibold">Listing Support</span>
-                            <span class="text-sm text-slate-300">Managed via Licensed Flat-Fee Brokerage</span>
-                        </div>
-                    </div>
-                </div>
                 <div class="pt-4 flex flex-col sm:flex-row gap-4">
-                    <!-- Replace with your actual listing URL -->
                     <a href="https://www.zillow.com/homedetails/14113-Cameron-Rd-Excelsior-Springs-MO-64024/66407988_zpid/" target="_blank" class="bg-emerald-500 hover:bg-emerald-600 text-white text-center px-8 py-4 rounded-xl font-bold shadow-lg transition transform active:scale-95 flex items-center justify-center space-x-2">
                         <i class="fa-solid fa-calendar-days"></i>
                         <span>Book Tour via Listing Broker</span>
-                    </a>
-                    <a href="sms:+18166298039?body=Hi!%20I'm%20interested%20in%2014113%20Cameron%20Rd%20and%20have%20a%20question..." class="bg-white/10 hover:bg-white/20 text-white text-center px-6 py-4 rounded-xl font-semibold border border-white/20 transition flex items-center justify-center space-x-2">
-                        <i class="fa-solid fa-comment-sms"></i>
-                        <span>Have Questions First? (Text Us)</span>
                     </a>
                 </div>
             </div>
             <div class="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/15 space-y-6">
                 <h3 class="text-2xl font-bold text-white">Have a quick question?</h3>
                 <p class="text-slate-200 text-sm">
-                    Skip the wait. Text us directly right now to ask about acreage specifics, views, or utilities.
+                    Questions are answered typically within 10–15 minutes. For an immediate response, text us directly at <strong>816-629-8039</strong>.
                 </p>
-                <div class="bg-white/5 p-4 rounded-xl border border-white/10 space-y-3">
-                    <div class="flex items-center space-x-3 text-emerald-300 text-sm font-medium">
-                        <i class="fa-solid fa-bolt"></i>
-                        <span>Direct line to owner Google Voice</span>
-                    </div>
-                    <div class="flex items-center space-x-3 text-slate-300 text-sm font-medium">
-                        <i class="fa-solid fa-circle-check text-emerald-400"></i>
-                        <span>No obligations, just direct answers</span>
-                    </div>
-                </div>
-                <a href="sms:+18166298039?body=Hi!%20I'm%20interested%20in%2014113%20Cameron%20Rd%20and%20have%20a%20question..." class="block w-full bg-white text-brand-900 hover:bg-slate-100 py-4 rounded-xl font-bold text-center shadow-md transition">
-                    <i class="fa-solid fa-comment-sms mr-2"></i> Text Owners Now
-                </a>
+                <!-- Secondary Smart Contact Button -->
+                <button id="secondaryContactBtn" class="block w-full bg-white text-brand-900 hover:bg-slate-100 py-4 rounded-xl font-bold text-center shadow-md transition">
+                    <i class="fa-solid fa-comment-sms mr-2"></i> <span id="secondaryContactBtnText">Send a Quick Question</span>
+                </button>
             </div>
         </div>
     </section>
@@ -311,15 +255,125 @@
 
     <!-- Floating Direct SMS Widget (Bottom Right) -->
     <div class="fixed bottom-6 right-6 z-50">
-        <a href="sms:+18166298039?body=Hi!%20I'm%20interested%20in%2014113%20Cameron%20Rd%20and%20have%20a%20question..." class="bg-brand-700 hover:bg-brand-800 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center text-2xl transition transform hover:scale-105 active:scale-95 relative group">
+        <button id="floatingContactBtn" class="bg-brand-700 hover:bg-brand-800 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center text-2xl transition transform hover:scale-105 active:scale-95 relative group">
             <i class="fa-solid fa-comment-sms"></i>
             <span class="absolute -top-1 -right-1 w-4 h-4 bg-emerald-500 rounded-full border-2 border-white animate-pulse"></span>
-            <!-- Tooltip -->
             <span class="absolute right-16 bg-slate-900 text-white text-xs font-medium px-3 py-1.5 rounded-lg shadow-md opacity-0 group-hover:opacity-100 transition pointer-events-none whitespace-nowrap">
-                Text Owners Directly!
+                <span id="floatingContactBtnText">Text Owners Directly!</span>
             </span>
-        </a>
+        </button>
     </div>
+
+    <!-- Desktop Modal Popup for Quick Questions -->
+    <div id="desktopModal" class="hidden fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-md w-full p-6 shadow-2xl space-y-5 border border-slate-100 relative animate-in fade-in zoom-in duration-200">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-xl bg-emerald-100 text-brand-700 flex items-center justify-center font-bold">
+                        <i class="fa-solid fa-envelope-open-text"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900">Ask a Question</h3>
+                </div>
+                <button id="closeModalBtn" class="text-slate-400 hover:text-slate-600 text-xl p-1">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            
+            <p class="text-sm text-slate-600 leading-relaxed">
+                Questions are answered typically within <strong>10–15 minutes</strong>. For an immediate response, text us directly at <span class="text-brand-700 font-bold">816-629-8039</span>.
+            </p>
+
+            <form id="questionForm" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1">Your Name / Contact Info</label>
+                    <input type="text" id="qName" required placeholder="Name, Phone or Email" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-brand-700 text-sm">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1">Your Message</label>
+                    <textarea id="qMessage" rows="3" required placeholder="What would you like to know about the property?" class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-brand-700 text-sm"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-brand-700 hover:bg-brand-800 text-white font-bold py-3.5 rounded-xl shadow transition">
+                    Send Question
+                </button>
+            </form>
+            <div id="formSuccess" class="hidden text-center py-6 space-y-3">
+                <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto text-xl font-bold">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <h4 class="text-lg font-bold text-slate-900">Message Sent!</h4>
+                <p class="text-sm text-slate-600">Thanks for reaching out. We will get back to you within 10–15 minutes.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Smart Device Behavior Script -->
+    <script>
+        const ownerNumber = '8166298039';
+        const propertyEmail = 'cameronroadhomestead@gmail.com';
+        const messageBody = "Hi! I'm interested in 14113 Cameron Rd and have a question...";
+
+        function isMobileDevice() {
+            return (/Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
+        }
+
+        // Setup buttons based on device
+        function setupContactButtons() {
+            const isMobile = isMobileDevice();
+
+            const mainBtn = document.getElementById('mainContactBtn');
+            const secondaryBtn = document.getElementById('secondaryContactBtn');
+            const floatingBtn = document.getElementById('floatingContactBtn');
+
+            if (isMobile) {
+                // Mobile behavior: Open SMS app directly
+                const smsLink = `sms:+1${ownerNumber}?body=${encodeURIComponent(messageBody)}`;
+                
+                mainBtn.onclick = () => window.location.href = smsLink;
+                secondaryBtn.onclick = () => window.location.href = smsLink;
+                floatingBtn.onclick = () => window.location.href = smsLink;
+            } else {
+                // Desktop behavior: Open custom question modal
+                const modal = document.getElementById('desktopModal');
+                const closeModal = document.getElementById('closeModalBtn');
+
+                const openModalAction = (e) => {
+                    e.preventDefault();
+                    modal.classList.remove('hidden');
+                };
+
+                mainBtn.onclick = openModalAction;
+                secondaryBtn.onclick = openModalAction;
+                floatingBtn.onclick = openModalAction;
+
+                closeModal.onclick = () => modal.classList.add('hidden');
+                modal.onclick = (e) => { if(e.target === modal) modal.classList.add('hidden'); };
+
+                // Handle mock form submission smoothly by opening user's email client addressed to your new inbox
+                const form = document.getElementById('questionForm');
+                const successDiv = document.getElementById('formSuccess');
+
+                form.onsubmit = (e) => {
+                    e.preventDefault();
+                    const nameVal = document.getElementById('qName').value;
+                    const msgVal = document.getElementById('qMessage').value;
+                    
+                    // Opens default email client addressed directly to your dedicated property email
+                    window.location.href = `mailto:${propertyEmail}?subject=Website Inquiry from ${encodeURIComponent(nameVal)}&body=${encodeURIComponent(msgVal + "\n\nContact Info: " + nameVal)}`;
+                    
+                    form.classList.add('hidden');
+                    successDiv.classList.remove('hidden');
+                    setTimeout(() => {
+                        modal.classList.add('hidden');
+                        form.reset();
+                        form.classList.remove('hidden');
+                        successDiv.classList.add('hidden');
+                    }, 3500);
+                };
+            }
+        }
+
+        setupContactButtons();
+    </script>
 
     <!-- Mobile Navigation Script -->
     <script>
